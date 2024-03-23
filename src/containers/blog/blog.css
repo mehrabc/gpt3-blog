@@ -1,0 +1,127 @@
+.gpt3__blog {
+    display: flex;
+    flex-direction: column;
+}
+
+.gpt3__blog-heading {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5rem;
+}
+
+.gpt3__blog-heading h1 {
+    font-family: var(--font-family);
+    font-size: 62px;
+    line-height: 75px;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+}
+
+.gpt3__blog-container {
+    display: flex;
+    flex-direction: row;
+    margin-right: 2rem;
+}
+
+.gpt3__blog-container__groupA {
+    display: flex;
+    flex: 0.75;
+    margin-right: 2rem;
+}
+
+.gpt3__blog-container__groupB {
+    display: grid;
+    flex: 1;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+@media screen and (max-width: 1010px) {
+    .gpt3__blog-container {
+        flex-direction: column-reverse;
+    }
+
+
+    .gpt3__blog-container__groupA {
+        margin: 2rem 0;
+    }
+
+    .gpt3__blog-container__groupA .gpt3__blog-container__article {
+        width: 48%;
+    }
+
+    .gpt3__blog-container .gpt3__blog-container__article-image {
+        height: 128.56px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .gpt3__blog-container__groupB {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .gpt3__blog-container__groupA .gpt3__blog-container__article {
+        width: 100%
+    }
+
+    .gpt3__blog-heading h1 {
+        font-size: 46px;
+        line-height: 52px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .gpt3__blog-heading h1 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+}
+
+/* .gpt3__blog {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.gpt3__blog-heading {
+    margin-bottom: 2rem;
+}
+
+.gpt3__blog-container {
+    display: flex;
+    flex-direction: row;
+    margin-right: 2rem;
+    padding: 1rem;
+}
+
+.gpt3__blog-container__groupA {
+    display: flex;
+    margin-right: 2rem;
+    height: 100%;
+    width: 100%;
+    flex: 1;
+}
+
+
+.gpt3__blog-container__groupB {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.gpt3__blog-container__groupB .gpt3__blog-container__article {
+    width: 500px;
+    height: 100%;
+    margin-bottom: 2rem;
+
+
+} */
